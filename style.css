@@ -134,8 +134,19 @@ section {
 	padding: 100px 0;
 }
 
-.about, .services, .skills {
+.about, .services, .skills, .teams {
 	font-family: 'Poppins', sans-serif;
+}
+
+.teams, 
+.teams .carousel .card, 
+.teams .carousel .card p {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Force card titles/names to use Ubuntu font matching logo and titles */
+.teams .carousel .card .text {
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .about .about-content,
@@ -385,7 +396,17 @@ section .title::after {
 }
 
 /* Teams Section Styling */
+.teams {
+	color: #fff;
+	background: #111;
+}
+
+.teams .title::before {
+	background: #fff;
+}
+
 .teams .title::after {
+	background: #111;
 	content: "Who with me";
 }
 
@@ -426,6 +447,110 @@ section .title::after {
 	height: 13px;
 	width: 13px;
 	margin: 0px;
+}
+
+/* Contact Section Styling */
+.contact {
+	color: #111;
+	background: #fff;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact .title::before {
+	background: #111;
+}
+
+.contact .title::after {
+	background: #fff;
+	content: "Get in Touch";
+}
+
+.contact .contact-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contact .contact-content .column {
+	width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.contact .contact-content .left p {
+	text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+	margin: 10px 0;
+}
+
+.contact .contact-content .row {
+	display: flex;
+	height: 65px;
+	align-items: center;
+}
+
+.contact .contact-content .row i {
+	font-size: 25px;
+	color: crimson;
+}
+
+.contact .contact-content .row .info {
+	margin-left: 30px;
+}
+
+.contact .contact-content .row .head {
+	font-weight: 500;
+}
+
+.contact .contact-content .row .sub-title {
+	color: #666;
+}
+
+/* Social Media Placeholder Buttons */
+.contact .social-links {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.contact .social-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	width: 100%;
+	padding: 12px 20px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+	background: crimson;
+	border: 2px solid crimson;
+	border-radius: 6px;
+	transition: all 0.3s ease;
+}
+
+.contact .social-btn:hover {
+	color: crimson;
+	background: transparent;
+}
+
+.contact .social-btn i {
+	font-size: 22px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 947px) {
+	.contact .contact-content .column {
+		width: 100%;
+		margin-bottom: 30px;
+	}
 }
 
 /* Responsive Media Query Start */
