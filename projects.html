@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar sticky">
+        <div class="max-width">
+            <div class="logo"><a href="index.html">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#teams">Experience</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Page Section Start -->
+    <section class="projects-page" id="projects-page">
+        <div class="max-width">
+            <h2 class="title">All Projects</h2>
+            <div class="projects-content">
+
+                <div class="card">
+                    <div class="box">
+                        <img src="/projects/stromen.png" alt="Project 1">
+                        <div class="text">Stromen Streaming Platform</div>
+                        <p>Microservices-based streaming backend built with NestJS, RabbitMQ, PostgreSQL, Docker, and React frontend.</p>
+                        <div class="tech-stack">
+                            <span>NestJS</span>
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>RabbitMQ</span>
+                            <span>PostgreSQL</span>
+                            <span>MiniIO</span>
+                            <span>FFmpeg</span>
+                        </div>
+                        <a href="https://github.com/sanguine59/stromen" target="_blank" rel="noopener noreferrer">View Source</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="/projects/potato.jpg" alt="Project 2">
+                        <div class="text">Potato Disease Detection</div>
+                        <p>Computer Vision pipeline utilizing YOLO object detection for automated potato quality control and disease classification.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>YOLO</span>
+                            <span>PyTorch</span>
+                        </div>
+                        <a href="https://github.com/sanguine59/AOLAI" target="_blank" rel="noopener noreferrer">View Source</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="projects/wukwembege.png" alt="Project 3">
+                        <div class="text">Wukwembege</div>
+                        <p>Wukwembege is a mobile application designed to connect event organizers with food stall vendors. Organizers can create and manage events, while vendors can discover available events and book stall spaces.</p>
+                        <div class="tech-stack">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>MySQL</span>
+                            <span>Javascript</span>
+                            <span>Dart</span>
+                        </div>
+                        <a href="https://github.com/sanguine59/wukwembege" target="_blank" rel="noopener noreferrer">View Source</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="back-home">
+                <a href="index.html" class="btn">← Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
